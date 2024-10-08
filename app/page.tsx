@@ -83,9 +83,9 @@ export default function Home() {
               <CardTitle className="text-2xl font-extrabold text-white">Analysis Result</CardTitle>
             </CardHeader>
             <CardContent>
-              <pre className="bg-gray-700 p-4 rounded-lg overflow-auto h-[500px] text-sm">
+              <pre className="bg-gray-700 p-4 rounded-lg overflow-auto h-[500px] text-lg font-bold text-white">
                 {!result ? 'Enter a tweet ID and click Analyze' : 
-                 JSON.stringify(result, null, 2)}
+                 result}
               </pre>
             </CardContent>
           </Card>
