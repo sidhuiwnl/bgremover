@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const genAI = new GoogleGenerativeAI("AIzaSyBLfoJa0DDSW-7ra8LrABDVm5F5Hwu4nsI");
+const genAI = new GoogleGenerativeAI("api code");
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 export async function analyzeSentiment(tweetBody: string) {
