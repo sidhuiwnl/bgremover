@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Loader2 } from "lucide-react"
 import { analyzeSentiment } from '@/lib/gemini';
 
-// type Result = "Positive" | "Negative"| "Neutral" | "error"
+
 
 export default function Home() {
   const [tweetId, setTweetId] = useState("")
@@ -85,7 +85,7 @@ export default function Home() {
             <CardContent>
               <pre className="bg-gray-700 p-4 rounded-lg overflow-auto h-[500px] text-lg font-bold text-white">
                 {!result ? 'Enter a tweet ID and click Analyze' : 
-                 result}
+                 `Sentiment Response : ${result}`}
               </pre>
             </CardContent>
           </Card>

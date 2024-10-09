@@ -1,7 +1,8 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
+'use server'
 
-const genAI = new GoogleGenerativeAI("api code");
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+import { model } from "./modal";
+
+
 
 export async function analyzeSentiment(tweetBody: string) {
   const prompt = `You are an advanced AI model trained for sentiment analysis of tweets. Please analyze the following tweet and provide its sentiment as "Positive", "Negative", or "Neutral", along with a detailed explanation: "${tweetBody}"`;
